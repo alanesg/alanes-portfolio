@@ -216,3 +216,179 @@
   margin-top: 10px; 
   gap: 10px; 
 }
+
+
+
+/* Tablet: ≤1024px */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column; /* empilha esquerda/direita */
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .Home_container__left,
+  .Home_container__right {
+    width: 100%;
+  }
+
+  .images-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .solution-container,
+  .proposite-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* Mobile: ≤480px */
+@media (max-width: 480px) {
+  .menuHome{
+    margin: 20px;
+  }
+  .container {
+    height: auto;       /* deixa a altura se ajustar ao conteúdo */
+    min-height: 90vh;  /* opcional: garante que preencha a tela se quiser */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;      /* opcional se o menu for fixo */
+    padding-top:0;  /* espaço interno para não colar no menu */
+    padding-bottom: 20px;
+  }
+
+
+  /* Ajuste do menu */
+  nav.menuHome {
+    position: relative;
+    z-index: 1000; /* sempre acima do container */
+    padding: 10px 20px; /* diminui tamanho do menu */
+    width: 80%;
+  }
+  .logo-Menu {
+    width: 100px;  /* menor para caber na tela */
+    height: auto;
+    margin-right: 10 auto; /* centraliza se necessário */
+  }
+
+  nav.menuHome ul {
+    width: 50%; /* não ocupar toda a tela */
+    margin: 0 auto;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: solid 2px black;
+  }
+
+  .dropdown-menu li a {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  nav.menuHome ul.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Container left ajustado */
+  .Home_container__left {
+    width: 100%;
+    margin-top: 10px; /* afasta do menu */
+    margin-left: 55px;
+
+  }
+  .Home_container__right {
+    margin-right: 0;
+  }
+  /* Ajustes de setas e textos */
+  .solution-container,
+  .proposite-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .solution-container {
+    display: flex;
+    flex-direction: row; /* empilha a imagem acima do texto no celular */
+    align-items: center;
+    gap: 5px;
+  }
+
+  .solution-container img {
+    width: 25px; /* menor seta */
+  }
+
+  .proposite-container {
+  display: flex;           /* mantém imagem e texto lado a lado */
+  align-items: center;     /* alinha verticalmente */
+  gap: 10px;               /* espaço entre seta e texto */
+  padding: 0;
+  margin: 0;
+}
+
+.proposite-container img {
+  width: 30px;             /* largura menor, proporcional */
+  height: auto;            /* mantém proporção correta */
+}
+
+.PropositeHome {
+  font-size: 2rem;         /* tamanho do texto no desktop */
+  margin: 0;
+}
+
+  .arrow-right,
+  .arrow-diagonal {
+    width: 25px;
+  }
+  .solutionHome{
+    font-size: 1.3rem;
+    padding: 1px 10px;
+  }
+  .criativeHome{
+    font-size: 1.9rem;
+  }
+  .PropositeHome {
+    font-size: 1.3rem;
+  }
+ .proposite-container{
+  flex-direction: row;
+ }
+  /* Foto do Alanes */
+  .alanes-photo {
+    width: 140px;
+    height: auto;
+  }
+
+  .images-wrapper {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .Home_container__right{
+    padding-top: 50px;
+    flex-direction:column;
+    display: flex;
+  }
+  .images-wrapper {
+    flex-direction: row;
+  }
+  .coffee-mouseicon{
+    width: 80px;
+    height: 80px;
+  }
+  .alanes-photo{
+    width: 90px;
+    height: 90px;
+  }
+  .text-container{
+    margin-left: 0;
+  }
+}

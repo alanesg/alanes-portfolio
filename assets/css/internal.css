@@ -12,6 +12,7 @@ body {
   align-items: center;
   height: 50vh;
 }
+
 /*ICONE DA LOGO*/
 .logo-Menu {
     width: 60px;
@@ -21,3 +22,42 @@ body {
     align-items: center;
     display: flex;
 }
+
+/* Esconde o hamburguer no desktop */
+.hamburger {
+  display: none;
+  width: 35px;
+  height: auto;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* --- Mobile --- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* aparece só no mobile */
+  }
+
+  .menuHome ul {
+    display: none; /* esconde menu no mobile */
+    flex-direction: column;
+    background: var(--primary-color);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    gap: 15px;
+  }
+
+  .menuHome ul.show {
+    display: flex; /* aparece quando clicar no hamburguer */
+  }
+}
+

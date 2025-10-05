@@ -136,3 +136,94 @@ html, body {
     width: 40px;
     height: 40px;
 }
+
+
+
+
+
+
+
+
+
+
+/*MOBILE*/
+@media (max-width: 480px) {
+    html, body{
+        overflow-y: auto;
+        margin: 5px;
+    }
+    nav.menuHome{
+        width: 76%;
+    }
+   
+  .container {
+    height: auto;       /* deixa a altura se ajustar ao conteúdo */
+    min-height: 90vh;  /* opcional: garante que preencha a tela se quiser */
+    flex-direction: column;
+    margin-top: 10px;      /* opcional se o menu for fixo */
+    padding-top:0;  /* espaço interno para não colar no menu */
+    padding-bottom: 20px;
+    gap: 15px;
+  }
+  .container_left{
+    margin-left: 81px;
+    margin-top: -20px;
+  }
+  .container_left img {
+        width: 350px;
+        height: 350px;
+        padding: 5px;
+    }
+    .container_right{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 8px;
+        position: relative;
+        z-index: 10;
+    }
+     .container_right img {
+        margin: 0;
+        width: 50px;
+        height: 50px;
+        border: solid 1px black;
+        border-radius: 50%;
+    }
+
+    .container_right h1 {
+        font-size: 18px;
+        width: auto;
+        height: auto;
+        padding: 10px 20px;
+        margin: 0;
+    }
+    .container_bottom{
+        position: relative;
+        bottom: auto;
+        border-radius: 30px 30px 0 0;
+        margin-top: 20px;
+        width: 80%;
+        height: 260px;
+        margin-left: 30px;
+        z-index: 5;
+        transform: rotateY(-40%);
+    }
+    .container_skills {
+       
+        position: relative; /* remove o deslocamento absoluto */
+        top: 0;
+        left: 0;
+        width: 78%;
+        height: 270px;
+        margin: 0 auto;
+        transform: translateY(-8%);
+        padding-bottom: 50px;
+    }
+   
+}
+
+
+
+
+

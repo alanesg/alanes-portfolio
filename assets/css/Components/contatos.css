@@ -152,3 +152,134 @@ html, body {
     border-radius: 40px 40px 0 0;
 }
 
+/*  responsividade*/
+
+@media (max-width: 480px) {
+
+  html, body {
+    overflow-y: auto; /* permite rolar */
+  }
+
+  /* MENU */
+  .menuHome {
+    width: 85%;
+    margin: 15px auto;
+    padding-bottom: 20px;
+    
+  }
+
+  /* CONTAINER PRINCIPAL */
+  .contato-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 0 10px;
+    margin-top: 100px;
+  }
+  .contato-container::after{
+    height: 0;
+  }
+  /* LADO ESQUERDO */
+  .container_left {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+  }
+
+  .name {
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .name img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .name h1 {
+    width: auto;
+    height: auto;
+    padding: 8px 15px;
+    font-size: 22px;
+  }
+
+  /* TÍTULOS "VAMOS TRABALHAR JUNTOS" */
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .title-container h1 {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+
+  .title-container h1:last-child {
+    margin-bottom: 10px;
+  }
+
+  /* INFORMAÇÕES DE CONTATO (CAIXA BRANCA) */
+  .container-bottom {
+    position: relative; /* antes era absolute */
+    bottom: auto;
+    transform: none;
+    width: 90%;
+    height: auto;
+    margin: 15px auto 15px auto;
+    padding: 15px 10px;
+    border-radius: 25px 25px 0 0;
+    border: solid 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contato-list {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .contato-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .contato-list img {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* LADO DIREITO — FOTO */
+.container-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    position: relative;
+  }
+
+  .photo_container_right {
+    position: relative; /* substitui absolute */
+    width: 85%;
+    height: 240px;
+    bottom: 10px;
+    margin: 0 auto;
+    border-radius: 25px 25px 0 0;
+    transform: translateY(30%);
+  }
+
+  .photo_container_right img {
+    position: absolute;
+    width: 80%;
+    height: 280px;
+    border-radius: 25px 25px 0 0;
+    bottom: 0;
+  }
+}

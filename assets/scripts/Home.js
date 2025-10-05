@@ -12,6 +12,25 @@ document.querySelector('.dropdown-toggle').addEventListener('click', function(ev
   caret.classList.toggle('rotate'); //rotação da setinha
 });
 
+/*  Menu hamburguer */
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const menu = document.querySelector(".menuHome ul");
+
+  hamburger.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
+});
+
+
+/* Fecha menu ao clicar em link mobile */
+menuList.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth <= 768) {
+      menuList.classList.remove('show');
+    }
+  });
+});
 
 
 
