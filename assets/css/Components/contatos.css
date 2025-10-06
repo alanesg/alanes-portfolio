@@ -262,6 +262,7 @@ html, body {
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-top: 20px;
   }
 
   .photo_container_right {

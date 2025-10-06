@@ -2,7 +2,7 @@
 
 html, body {
     overflow-x: hidden; /* remove scroll lateral */
-
+    overflow-y: hidden;
 }
 /*CONFIG MENU HOME*/
 .menuHome{
@@ -191,9 +191,9 @@ html, body {
         display: flex;
         flex-direction:row; /* em coluna */
         justify-content: center;
-        align-items: center;
         gap: 10px;
-        margin: 0;
+        margin-bottom: 20px;
+        margin-left: 40px;
         padding: 0;
     }
 
@@ -236,7 +236,7 @@ html, body {
         gap: 15px;
         justify-items: center;
         align-items: center;
-        margin-left: 60px;
+        margin-left: 70px;
     }
 
     /* Skills */
