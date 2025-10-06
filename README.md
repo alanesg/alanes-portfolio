@@ -18,7 +18,7 @@ O objetivo principal é servir como vitrine para meus projetos e uma forma de me
 ## 🎨 Destaques
 
 - 💎 **Design autoral:** interface pensada e desenhada por mim.
-- 📱 **Responsivo:** adaptável a diferentes tamanhos de tela (desktop, tablet, mobile).
+- 📱 **Responsivo:** adaptável a diferentes tamanhos de tela (desktop e mobile).
 - ⚡ **Leve e rápido:** sem dependências externas pesadas.
 - 🎬 **Animações sutis:** transições suaves e interações visuais elegantes.
 - 🧩 **Estrutura modular:** CSS separado por componentes para facilitar manutenção e expansão.
