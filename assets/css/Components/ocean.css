@@ -168,13 +168,132 @@ body {
 
 /* Mobile */
 @media (max-width: 480px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
+  body {
+    margin: 5px;
+  }
+
+  nav.menuHome {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  /* CONTAINER PRINCIPAL */
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    margin-top: 90px;
+  }
+
+  /* LADO ESQUERDO */
+  .container_left {
+    width: 100%;
+    margin: 0;
+    align-items: center;
     gap: 15px;
   }
 
-  .projects-grid img {
-    max-width: 100%;
+  .title {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .container_left #site {
+    font-size: 18px;
+    padding: 10px 20px;
+    width: auto;
+    border-radius: 30px;
+  }
+
+  .container_left #title2 {
+    font-size: 45px;
+    padding: 0;
+  }
+
+  .container_text {
+    max-width: 90%;
+    margin: 10px auto;
+    text-align: justify;
+  }
+
+  .container_text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* CARDS */
+  /* CARDS MOBILE REDUZIDOS */
+.container_cards {
+    flex-direction: column;  /* empilha os cards */
+    align-items: center;
+    gap: 10px;               /* espaçamento menor entre os cards */
+    margin-top: 15px;
+}
+
+.card {
+    border-width: 2px;       /* borda mais fina */
+    border-radius: 15px;     /* bordas arredondadas suaves */
+    width: 70%;              /* reduz a largura do card */
+    max-width: 250px;        /* limite máximo */
+    transition: transform 0.2s ease;
+}
+
+.card img {
+    width: 100%;             /* ocupa toda a largura do card */
+    height: auto;            /* mantém proporção da imagem */
+    border-radius: 15px;     /* bordas arredondadas da imagem */
+}
+
+  /* LADO DIREITO */
+  .container_right {
+    width: 100%;
+    margin: 0;
+    margin-top: 30px;
+    align-items: center;
+  }
+
+  .icon {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon #xicara {
+    width: 230px;
     height: auto;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  /* BOTÃO */
+  .container_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .btn-saiba-mais {
+    margin: 0;
+    font-size: 16px;
+    padding: 8px 25px;
+    border-radius: 40px;
+    background-color: var(--primary-color);
+  }
+
+  #arrow {
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+    transform: rotate(90deg); /* seta aponta pra baixo */
   }
 }
+

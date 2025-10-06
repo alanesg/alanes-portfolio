@@ -175,15 +175,16 @@
     margin-left: 4px;
   }
   .container-right{
-    margin-left: 40px ;
+    margin-left: 50px ;
     justify-content: center;
   }
   .background-right{
-    height: 18vh;
+    height: 27vh;
+    width: 33vw;
   }
   .alanesPhoto{
-    height: 18vh;
-    width: 20vw;
+    height: 25vh;
+    width: 30vw;
     top: -20px;
     left: -25px;
   }
