@@ -254,7 +254,7 @@
   }
   .container {
     height: auto;       /* deixa a altura se ajustar ao conteúdo */
-    min-height: 90vh;  /* opcional: garante que preencha a tela se quiser */
+    min-height: 80vh;  /* opcional: garante que preencha a tela se quiser */
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -301,7 +301,7 @@
   .Home_container__left {
     width: 100%;
     margin-top: 10px; /* afasta do menu */
-    margin-left: 55px;
+    margin-left: 78px;
 
   }
   .Home_container__right {
@@ -345,17 +345,17 @@
 
   .arrow-right,
   .arrow-diagonal {
-    width: 25px;
+    width: 35px;
   }
   .solutionHome{
-    font-size: 1.3rem;
-    padding: 1px 10px;
+    font-size: 18px;
+    padding: 1px 8px;
   }
   .criativeHome{
-    font-size: 1.9rem;
+    font-size: 40px;
   }
   .PropositeHome {
-    font-size: 1.3rem;
+    font-size: 20px;
   }
  .proposite-container{
   flex-direction: row;
