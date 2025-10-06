@@ -15,39 +15,6 @@ O objetivo principal é servir como vitrine para meus projetos e uma forma de me
 
 ---
 
-## 🖼️ Estrutura do projeto
-
-alanes-portfolio/
-│
-├── assets/
-│ ├── css/
-│ │ ├── internal.css
-│ │ └── Components/
-│ │ ├── home.css
-│ │ ├── me.css
-│ │ └── contact.css
-│ │
-│ ├── img/
-│ │ └── (imagens do site)
-│ │
-│ └── js/
-│ └── Home.js
-│
-├── pages/
-│ ├── quemsoueu/
-│ │ └── me.html
-│ ├── contato/
-│ │ └── contato.html
-│ └── projetos/
-│ └── index.html
-│
-├── index.html # Página inicial
-└── README.md
-
-
-
----
-
 ## 🎨 Destaques
 
 - 💎 **Design autoral:** interface pensada e desenhada por mim.
