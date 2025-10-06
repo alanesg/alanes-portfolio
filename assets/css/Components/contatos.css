@@ -176,7 +176,7 @@ html, body {
     text-align: center;
     position: relative;
     padding: 0 10px;
-    margin-top: 100px;
+    margin-top: 80px;
   }
   .contato-container::after{
     height: 0;
@@ -211,7 +211,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .title-container h1 {
@@ -220,7 +220,7 @@ html, body {
   }
 
   .title-container h1:last-child {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   /* INFORMAÇÕES DE CONTATO (CAIXA BRANCA) */
@@ -261,25 +261,31 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
     position: relative;
   }
 
   .photo_container_right {
-    position: relative; /* substitui absolute */
-    width: 85%;
-    height: 240px;
-    bottom: 10px;
-    margin: 0 auto;
-    border-radius: 25px 25px 0 0;
-    transform: translateY(30%);
+    position: relative;
+        width: 90%;
+        height: 220px;
+        margin: 20px auto 0 auto;
+        border-radius: 25px 25px 0 0;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--detail-color);
+        z-index: 5;
+        margin-bottom: 15px;
   }
 
   .photo_container_right img {
     position: absolute;
     width: 80%;
-    height: 280px;
     border-radius: 25px 25px 0 0;
     bottom: 0;
+    height: auto;
+   
   }
 }
