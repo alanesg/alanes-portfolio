@@ -219,6 +219,7 @@ html, body {
         height: 220px;
         margin: 20px auto 0 auto;
         border-radius: 25px 25px 0 0;
+        border: solid 2px black;
         padding: 20px 0;
         display: flex;
         justify-content: center;
@@ -232,6 +233,7 @@ html, body {
     .container_skills {
         width: 80%;
         height: auto;
+        border: solid 2px black;
         grid-template-columns: 1fr 1fr; /* duas colunas */
         gap: 15px;
         justify-items: center;

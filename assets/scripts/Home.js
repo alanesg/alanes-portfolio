@@ -13,24 +13,33 @@ document.querySelector('.dropdown-toggle').addEventListener('click', function(ev
 });
 
 /*  Menu hamburguer */
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector(".hamburger");
   const menu = document.querySelector(".menuHome ul");
 
   hamburger.addEventListener("click", () => {
     menu.classList.toggle("show");
+
   });
+
+ /* Fecha menu ao clicar em link mobile */
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', (event) => {
+        //se for a aba de dropdown, não fecha menu
+      if (link.classList.contains("dropdown-toggle")) {
+        event.preventDefault();
+        return;
+      }
+      if (window.innerWidth <= 768) {
+          menu.classList.remove('show');
+        }
+      });
+    });
 });
 
 
-/* Fecha menu ao clicar em link mobile */
-menuList.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    if (window.innerWidth <= 768) {
-      menuList.classList.remove('show');
-    }
-  });
-});
 
 
 

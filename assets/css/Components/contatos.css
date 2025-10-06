@@ -220,13 +220,13 @@ html, body {
   }
 
   .title-container h1:last-child {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   /* INFORMAÇÕES DE CONTATO (CAIXA BRANCA) */
   .container-bottom {
     position: relative; /* antes era absolute */
-    bottom: auto;
+    bottom: 15px;
     transform: none;
     width: 90%;
     height: auto;
@@ -271,6 +271,7 @@ html, body {
         height: 220px;
         margin: 20px auto 0 auto;
         border-radius: 25px 25px 0 0;
+        border: solid 2px black;
         padding: 20px 0;
         display: flex;
         justify-content: center;
@@ -285,6 +286,7 @@ html, body {
     position: absolute;
     width: 80%;
     border-radius: 25px 25px 0 0;
+    border: solid 2px black;
     bottom: 0;
     height: auto;
    
